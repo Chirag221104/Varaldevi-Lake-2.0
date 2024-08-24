@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varaldevi</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <nav class="nav-bar">
+      <p>Varaldevi Lake</p>
+      <div class="nav-links">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Get Involved</a>
+        <a href="">Contact</a>
+        <a id="nav-last" href="">Donate</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <img src="image1.webp" alt="Snow" style="width:100%;">
+    <div class="overlay">
+      <div class="centered">Help Save Varaldevi Lake: Raising Awareness and Driving Cleanliness</div>
+      <div class="below-center">Varaldevi Lake is in desperate need of our attention and action</div>
+      <div class="center-button"><button>Take Action</button></div>
+    </div>
+    <div class="bottom-right">Varaldevi Lake, once a pristine oasis, has become a victim of neglect and pollution</div>
+  </div>
+
+</body>
+
+</html>
+
+<style>
+body, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #E9F2F2;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: #F8E5DE;
+  padding: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-bar p {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #c0392b;
+}
+
+#nav-last {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#nav-last:hover {
+  background-color: #c0392b;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  font-style: italic;
+  font-size: 52px;
+  width: 80%;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.below-center {
+  font-family: "Hanken Grotesk";
+  color: #323232;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.center-button button {
+  color: white;
+  background-color: #23694A;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 0.7rem;
+  width: 150px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 270px;
+  text-align: left;
+  background-color: #E9AB97;
+  color: #323232;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .centered {
+    font-size: 32px;
+    width: 90%;
+    line-height: 40px;
+  }
+
+  .below-center {
+    font-size: 18px;
+  }
+
+  .center-button button {
+    font-size: 14px;
+    width: 120px;
+  }
+
+  .bottom-right {
+    width: 90%;
+    margin-bottom: 20px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .container img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+
+  .centered {
+    font-size: 24px;
+    width: 80%;
+    line-height: 30px;
+  }
+
+  .below-center {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .center-button button {
+    font-size: 12px;
+    width: 100px;
+  }
+
+  .bottom-right {
+    width: 85%;
+    margin-bottom: 10px;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+</style>
